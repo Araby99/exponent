@@ -52,7 +52,6 @@ const Nav = () => {
                 document.getElementsByClassName("bars")[0].style.top = "0px";
             }
         })
-        alert(menu_height)
     }, [])
 
 
