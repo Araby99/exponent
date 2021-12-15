@@ -1,0 +1,503 @@
+.home header {
+    position: relative;
+    z-index: 0;
+    background: linear-gradient(-281.11deg, rgba(72,43,231,1) 0%, rgba(70,37,164,1) 95%);
+}
+.home header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url("http://brandexponents.com/exponent-lite/software-firm/wp-content/uploads/sites/38/2020/10/hero-bg-1.png") no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+.home .header-contect {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.home .title {
+    font-size: 5rem;
+    font-family: HindBold;
+    color: #fff;
+    line-height: 1;
+}
+.home .add {
+    font-size: 2rem;
+    color: #fff;
+}
+.home .description {
+    color: rgba(209,201,244,1);
+    font-size: 1.5rem;
+    font-family: HindLight;
+}
+.home .get-started {
+    padding: 15px 40px;
+    border: none;
+    color: #fff;
+    background: var(--primary-color);
+    border-radius: 30px;
+    text-transform: capitalize;
+    font-family: HindBold;
+    letter-spacing: 1.2px;
+}
+.products {
+    padding: 100px 0;
+}
+.sec-head {
+    font-size: 3rem;
+    text-align: center;
+    font-family: HindBold;
+    max-width: 50%;
+    margin: auto;
+    line-height: 1.5;
+    background: url('http://brandexponents.com/exponent-lite/software-firm/wp-content/uploads/sites/38/2020/10/dot-pattern.svg') no-repeat center;
+}
+.head-dot {
+    height: 7px;
+    width: 7px;
+    background: #000;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 50%;
+    margin: 20px 0;
+}
+.head-dot::before,
+.head-dot::after {
+    content: "";
+    height: 7px;
+    width: 40px;
+    background: #000;
+    display: inline-block;
+    position: absolute;
+    border-radius: 30px;
+    top: 0;
+}
+.head-dot::before {
+    left: 15px;
+}
+.head-dot::after{
+    right: 15px;
+}
+.sec-description {
+    font-size: 1.3rem;
+    text-align: center;
+    max-width: 50%;
+    margin: auto;
+    color: rgba(101,105,105,1);
+}
+.products .product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    gap: 0 30px;
+}
+.products .product-item {
+    transition: .2s;
+    padding: 30px;
+}
+.products .product-item:hover {
+    box-shadow: 0 0 20px 0 rgb(214 215 216 / 57%);
+}
+.products .product .product-head {
+    font-family: HindBold;
+    font-size: 1.8rem;
+}
+.products .product .product-head img {
+    margin-right: 5px;
+}
+.products .product .product-description {
+    color: rgba(101,105,105,1);
+    font-family: HindLight;
+    line-height: 1.7;
+}
+.products .product .product-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(101,105,105,1);
+}
+.products .product .product-action .start {
+    border: solid 2px rgba(101,105,105,1);
+    text-transform: capitalize;
+    background: none;
+    padding: 7px 25px;
+    border-radius: 20px;
+    color: rgba(101,105,105,1);
+    font-family: HindBold;
+    transition: .5s;
+}
+.products .product .product-action .start:hover {
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+    color: #fff;
+}
+.products .product .product-action .learn {
+    border: none;
+    position: relative;
+    background: none;
+    color: rgba(101,105,105,1);
+    text-transform: capitalize;
+    font-family: HindBold;
+    padding: 0;
+}
+.products .product .product-action .learn::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgba(101,105,105,1);
+}
+.products .product .product-action .learn::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    z-index: 5;
+    transition: .5s;
+}
+.products .product .product-action .learn:hover::before {
+    width: 100%;
+}
+.all-products {
+    text-align: center;
+}
+.button {
+    background: var(--primary-color);
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1.1;
+    border: solid 2px var(--primary-color);
+    padding: 13px 35px;
+    border-radius: 30px;
+    font-family: HindBold;
+    transition: .5s;
+    text-align: center;
+}
+.button:hover {
+    background: none;
+    color: var(--primary-color);
+}
+.information {
+    padding: 100px 0;
+    background: rgba(247,249,252,1);
+}
+.information .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.information .sec-head {
+    max-width: 70%;
+    margin-left: 0;
+    background: none;
+    text-align: left;
+    font-size: 2.5rem;
+}
+.information .sec-description {
+    max-width: 100%;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.information .head-dot {
+    position: relative;
+    left: 55px;
+}
+.owl-theme .owl-nav {
+    display: none;
+}
+.owl-dot.active span {
+    background: var(--primary-color)!important;
+}
+.companies {
+    padding: 100px 0;
+}
+.video {
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(281deg, rgba(70,37,164,.5) 0%, rgba(72,43,231,.5) 100%);
+}
+.video::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url("http://brandexponents.com/exponent-lite/software-firm/wp-content/uploads/sites/38/2020/10/18705-1.jpg") center no-repeat;
+    z-index: -1;
+}
+.video p {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 700;
+}
+.video .video-icon {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    margin: 20px auto;
+    background: #fff;
+    color: var(--primary-color);
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+.video .video-icon i {
+    margin: auto;
+    font-size: 1.2rem;
+}
+.video .video-icon::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: solid 1.5px var(--primary-color);
+    border-radius: 50%;
+    animation: video 2s infinite ease;
+}
+.video .video-icon::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: solid 1.5px var(--primary-color);
+    border-radius: 50%;
+    animation: video 2s 1s infinite ease;
+}
+@keyframes video {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.7);
+        opacity: 0;
+    }
+}
+.customers {
+    padding: 100px 0;
+}
+.customers .container {
+    display: flex;
+    justify-content: space-between;
+}
+.customers .sec-head {
+    width: 30%;
+    margin-left: 0;
+    text-align: left;
+    background-position: left;
+    font-size: 2.5rem;
+}
+.customer-img {
+    margin: auto;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 20px 0;
+    border-radius: 50%;
+    border: solid 5px var(--primary-color);
+    padding: 7px;
+    height: 120px;
+}
+.customers .container > div {
+    width: 50%;
+}
+.customers .head-dot {
+    display: block;
+    left: 55px;
+}
+.customers .sec-description {
+    max-width: 60%;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+.customers .customer-name {
+    font-size: 1.1rem;
+    font-family: HindBold;
+    text-transform: capitalize;
+    margin: 0;
+    text-align: center;
+}
+.customers .customer-job {
+    text-align: center;
+    text-transform: capitalize;
+    color: rgba(101,105,105,1);
+}
+.carousel-indicators [data-bs-target] {
+    display: none;
+}
+.carousel-control-prev-icon {
+    background: #000 url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+.carousel-control-next-icon  {
+    background: #000 url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.numbers {
+    padding: 100px 0;
+    background: rgba(247,249,252,1);
+}
+.numbers .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.numbers .container .number-item {
+    background: #fff;
+    padding: 25px;
+    width: 20%;
+}
+.numbers .container .num-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.numbers .container .num-title p {
+    margin: 0;
+    text-transform: capitalize;
+    font-family: HindBold;
+}
+.numbers .container .num-title i {
+    color: var(--primary-color);
+}
+.numbers .container .number-item > p {
+    color: #656969;
+    font-size: .8rem;
+    font-family: HindLight;
+    margin: 0;
+}
+.numbers .container .number-item > p > span {
+    font-size: 3rem;
+    display: block;
+    line-height: 1;
+    color: #000;
+}
+.freshworks {
+    padding: 100px 0;
+}
+.freshworks .freshworks-items {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.freshworks-items > div {
+    text-align: center;
+    box-shadow: 0 0 20px rgba(209,201,244,1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.freshworks-items > div img {
+    width: 100%;
+}
+.freshworks-items .fresh-tag {
+    font-size: .9rem;
+    margin: 20px 0;
+    color: var(--primary-color);
+    font-family: HindBold;
+}
+.freshworks-items .fresh-title {
+    margin: 0 30px 20px;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    transition: .5s;
+    cursor: pointer;
+}
+.freshworks-items .fresh-title:hover {
+    color: var(--primary-color);
+}
+.freshworks .view-more {
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    background: var(--primary-color);
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: 700;
+    border: none;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+@media (max-width: 1200px) {
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    .container {
+        max-width: 80%;
+    }
+    .header-contect {
+        height: 80vh!important;
+    }
+    .header-banner {
+        display: none;
+    }
+    .home .title {
+        font-size: 4rem;
+    }
+    .home .add {
+        font-size: 1.5rem;
+    }
+    .home .description {
+        font-size: 1rem;
+    }
+    .sec-head {
+        max-width: 80%;
+        font-size: 2.5rem;
+    }
+    .sec-description {
+        max-width: 100%;
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+    .products .product {
+        flex-direction: column;
+    }
+    .products .product > div {
+        margin-bottom: 20px;
+    }
+    .information .container {
+        flex-direction: column;
+    }
+    .customers .container {
+        flex-direction: column;
+    }
+    .customers .sec-head {
+        width: 100%;
+        font-size: 2rem;
+    }
+    .customers .container > div {
+        width: 100%;
+    }
+    .numbers .container {
+        flex-direction: column;
+    }
+    .numbers .container .number-item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .numbers .container .number-item:last-child {
+        margin-bottom: 0;
+    }
+    .freshworks .freshworks-items {
+        flex-direction: column;
+    }
+}

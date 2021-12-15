@@ -1,0 +1,107 @@
+footer {
+    padding: 100px 0;
+    background: linear-gradient(281.11deg, rgba(70,37,164,1) 0%, rgba(72,43,231,1) 100%);
+}
+footer .container {
+    display: flex;
+    justify-content: space-around;
+}
+footer .company-details img {
+    width: 50%;
+}
+footer .company-details ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+footer .company-details ul li {
+    margin: 10px 0;
+    color: #fff;
+}
+footer .company-details ul i {
+    color: #fff;
+    margin-right: 10px;
+}
+footer .company-details ul .telegram {
+    border-bottom: solid 1px var(--primary-color);
+    color: var(--primary-color);
+}
+footer .footer-list .list-head {
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: HindBold;
+}
+footer .footer-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: rgb(209,201,244);
+}
+footer .footer-list li {
+    transition: .5s;
+    font-family: HindLight;
+    font-size: .9rem;
+    margin: 10px 0;
+    cursor: pointer;
+}
+footer .footer-list li:hover {
+    color: #fff;
+    transform: translate(10px, 0);
+}
+footer .footer-contact {
+    display: flex;
+    flex-direction: column;
+}
+footer .footer-contact button {
+    padding: 10px 40px;
+    text-transform: capitalize;
+    border: solid 2px var(--primary-color);
+    border-radius: 5px;
+    background: var(--primary-color);
+    color: #fff;
+    margin-bottom: 20px;
+}
+footer .footer-contact button:nth-child(n+2) {
+    background: none;
+}
+footer .footer-contact .social-icon {
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer-contact .social-icon > div {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    font-size: .8rem;
+    transition: .5s;
+    cursor: pointer;
+    border: solid 2px #fff;
+}
+footer .footer-contact .social-icon > div:hover {
+    background: none;
+    color: #fff;
+}
+@media (max-width: 1200px) {
+    footer .container {
+        flex-direction: column;
+        width: 70%;
+    }
+    footer .container > div {
+        margin-bottom: 30px;
+    }
+    footer .footer-contact {
+        display: block;
+    }
+    footer .footer-contact button {
+        display: inline-block;
+        margin-right: 30px;
+    }
+    footer .footer-contact .social-icon {
+        width: 40%;
+    }
+}
